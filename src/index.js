@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDom from "react-dom"
+import App from './basic/App9'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDom.render(
+   <App></App>, 
+   document.getElementById('root')
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// test hook useEffect "beforeDesotory" 销毁阶段 App6
+// setTimeout(()=>{
+//    ReactDom.render(
+//       <input type="text"/>, 
+//       document.getElementById('root')
+//    )
+//   },3000)
