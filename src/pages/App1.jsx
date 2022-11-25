@@ -6,7 +6,7 @@ export default function App1() {
     console.log(localtion.pathname)
 
     const navigate = useNavigate()
-    const goDetail = (href) => {
+    const goDetail = () => {
         navigate('/detail')
     }
 
@@ -14,6 +14,10 @@ export default function App1() {
         navigate('/home', {
             state: { index: 1 }
         })
+    }
+
+    const goList = () => {
+        navigate('/list')
     }
     return (
         <>
@@ -23,9 +27,8 @@ export default function App1() {
             <ul><Link to="/detail?id=456">Detail</Link></ul>
             <hr />
             <button onClick={goHome}>跳转--home</button>
-            <button onClick={goDetail}>跳转--list</button>
-          
-            {/* <button onClick={goPage}>跳转--detail</button>  */}
+            <button onClick={goDetail}>跳转--detail</button>
+            <button onClick={goList}>跳转--list</button> 
             <hr />
             <Outlet />
         </>
