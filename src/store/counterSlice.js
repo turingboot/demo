@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
+//counterSlices是@reduxjs/toolkit中为了方便redux写法的工具集合
 export const counterSlice = createSlice({
     name: 'counter',
     initialState: {

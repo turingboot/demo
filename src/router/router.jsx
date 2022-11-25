@@ -16,6 +16,7 @@ const BaseRouter = () => (
                 <Route path="/detail" element={<Detail/>}></Route>
                 <Route path="/list/:id" element={<List/>}></Route>
             </Route>
+            {/* 404页面的处理 */}
             <Route path="*" element={<Error/>}></Route>
         </Routes>
         
