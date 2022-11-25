@@ -1,13 +1,13 @@
 import React from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 export default function App1() {
-    
-    
+
+
     //获取当前页面的location
     const localtion = useLocation()
     console.log(localtion.pathname)
-    
-        
+
+
     //事件跳转
     const navigate = useNavigate()
     const goDetail = () => {

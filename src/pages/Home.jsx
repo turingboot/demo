@@ -6,6 +6,6 @@ export default function Home() {
   const localtion = useLocation()
 
   return (
-    <div>Home:{localtion.state?localtion.state.index:""}</div>
+    <div>Home:{localtion.state ? localtion.state.index : ""}</div>
   )
 }
