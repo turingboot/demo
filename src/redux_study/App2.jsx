@@ -6,6 +6,7 @@ export default function App2() {
 
     const num = useSelector((state) => state.counter.num)
     const dispatch = useDispatch()
+    
     return (
         <>
             <div>数字是:{num}</div>
